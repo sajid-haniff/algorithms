@@ -35,3 +35,19 @@ class UF:
             self.sz[root_p] += self.sz[root_q]
 
         self.count -= 1
+
+
+if __name__ == '__main__':
+    import sys
+
+    n = int(sys.stdin.readline())
+    uf = UF(n)
+    for line in sys.stdin:
+        p, q = [int(i) for i in line.split()]
+        if uf.connected(p, q):
+            continue
+        else:
+            uf.union(p, q)
+            print("%s %s" % (p, q))
+    print(uf.count, "components")
+
