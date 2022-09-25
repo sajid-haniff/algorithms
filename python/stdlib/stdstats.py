@@ -100,7 +100,7 @@ def plotLines(a):
     stddraw.setXscale(-1, n)
     stddraw.setPenRadius(0.0)
     for i in range(1, n):
-        stddraw.line(i-1, a[i-1], i, a[i])
+        stddraw.line(i - 1, a[i - 1], i, a[i])
 
 #-----------------------------------------------------------------------
 
@@ -111,7 +111,7 @@ def plotBars(a):
     n = len(a)
     stddraw.setXscale(-1, n)
     for i in range(n):
-        stddraw.filledRectangle(i-0.25, 0.0, 0.5, a[i])
+        stddraw.filledRectangle(i - 0.25, 0.0, 0.5, a[i])
 
 #-----------------------------------------------------------------------
 

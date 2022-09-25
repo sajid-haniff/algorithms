@@ -10,8 +10,7 @@ commonly used Color objects defined in the color module.
 import time
 import os
 import sys
-import color
-import string
+from python.stdlib import color
 
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = 'hide'
 import pygame
@@ -31,26 +30,19 @@ else:
 
 # Define colors so clients need not import the color module.
 
-from color import WHITE
-from color import BLACK
-from color import RED
-from color import GREEN
-from color import BLUE
-from color import CYAN
-from color import MAGENTA
-from color import YELLOW
-from color import DARK_RED
-from color import DARK_GREEN
-from color import DARK_BLUE
-from color import GRAY
-from color import DARK_GRAY
-from color import LIGHT_GRAY
-from color import ORANGE
-from color import VIOLET
-from color import PINK
-from color import BOOK_BLUE
-from color import BOOK_LIGHT_BLUE
-from color import BOOK_RED
+from python.stdlib.color import WHITE
+from python.stdlib.color import BLACK
+from python.stdlib.color import RED
+from python.stdlib.color import GREEN
+from python.stdlib.color import BLUE
+from python.stdlib.color import CYAN
+from python.stdlib.color import MAGENTA
+from python.stdlib.color import YELLOW
+from python.stdlib.color import DARK_RED
+from python.stdlib.color import DARK_GREEN
+from python.stdlib.color import DARK_BLUE
+from python.stdlib.color import ORANGE
+from python.stdlib.color import PINK
 
 #-----------------------------------------------------------------------
 
