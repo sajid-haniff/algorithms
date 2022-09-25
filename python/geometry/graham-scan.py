@@ -1,4 +1,5 @@
 from math import atan2
+from python.stdlib import stdrandom, stddraw
 import random
 
 
@@ -46,8 +47,29 @@ def create_random_points(n):
 
 def main():
     points = create_random_points(100)
+
     hull = graham_scan(points)
     print(hull)
+
+    stddraw.clear()
+    stddraw.setXscale(-10, 110)
+    stddraw.setYscale(-10, 110)
+    stddraw.setPenRadius(0.01)
+    stddraw.setPenColor(stddraw.ORANGE)
+
+    for x, y in points:
+        stddraw.point(x, y)
+
+    #stddraw.show(5)
+
+    last_x, last_y = hull[-1]
+    for x, y in hull:
+        stddraw.line(last_x, last_y, x, y)
+        last_x, last_y = x, y
+
+    stddraw.setPenColor(stddraw.RED)
+    stddraw.show()
+
 
 
 if __name__ == "__main__":

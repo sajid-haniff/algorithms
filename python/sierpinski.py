@@ -6,8 +6,9 @@ from python.stdlib import stdrandom, stddraw
 # triangle to produce Sierpinski triangle of n points.
 
 def main():
-    n = int(sys.argv[1])
+    #n = int(sys.argv[1])
 
+    n = 1000
     cx = [0.000, 1.000, 0.500]
     cy = [0.000, 0.000, 0.866]
 
